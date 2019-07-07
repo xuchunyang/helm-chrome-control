@@ -62,12 +62,12 @@
    (lambda (item)
      (let-alist item
        (kill-new .url)
-       (message "URL copied: %s" url)))
+       (message "URL copied: %s" .url)))
    "Copy title"
    (lambda (item)
      (let-alist item
        (kill-new .title)
-       (message "Title copied: %s" title)))
+       (message "Title copied: %s" .title)))
    "Open URL in EWW"
    (lambda (item)
      (eww (let-alist item .url))))

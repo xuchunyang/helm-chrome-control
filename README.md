@@ -1,4 +1,5 @@
 # Control Chrome tabs with Helm
+[![Build Status](https://travis-ci.org/xuchunyang/helm-chrome-control.svg?branch=master)](https://travis-ci.org/xuchunyang/helm-chrome-control)
 
 `M-x helm-chrome-control` displays chrome tabs and let you control them:
 

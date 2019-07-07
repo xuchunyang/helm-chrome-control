@@ -36,6 +36,7 @@
    (file-name-directory (or load-file-name buffer-file-name))))
 
 (defun helm-chrome-control-list ()
+  "List Chrome tabs."
   (with-temp-buffer
     ;; Is there any case when chrome.js is not executable?
     (call-process helm-chrome-control-chrome.js nil t nil "list")
@@ -44,6 +45,7 @@
       (json-read))))
 
 (defun helm-chrome-control-candidates ()
+  "Build helm candidates."
   (mapcar
    (lambda (item)
      (let-alist item

@@ -57,7 +57,7 @@
      (call-process helm-chrome-control-chrome.js nil nil nil "focus" (let-alist item .arg)))
    "Close Tab"
    (lambda (item)
-     (call-process helm-chrome-control-chrome.js nil nil nil "close" (let-alist item .arg)))
+     (call-process helm-chrome-control-chrome.js nil nil nil "close" "--yes" (let-alist item .arg)))
    "Copy URL"
    (lambda (item)
      (let-alist item

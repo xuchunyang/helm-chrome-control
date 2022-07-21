@@ -4,7 +4,7 @@
 
 ;; Author: Xu Chunyang
 ;; Homepage: https://github.com/xuchunyang/helm-chrome-control
-;; Package-Requires: ((emacs "25.1") (helm-core "3.0"))
+;; Package-Requires: ((emacs "25.1") (helm-core "3.6.0"))
 ;; Created: 2019/7/7 清晨
 ;; Version: 1.0
 
@@ -27,7 +27,7 @@
 
 ;;; Code:
 
-(require 'helm)
+(require 'helm-core)
 (require 'json)
 
 (defconst helm-chrome-control-chrome.js
